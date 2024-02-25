@@ -37,20 +37,20 @@ python demo_python1.py
 
 -save run.sh and return to terminal  ( CTRL+X --> Y --> Press ENTER Key)
 
-
+- # python demo_python1.py
 step3)run code on GPU- How to target specific GPUs
 The command for submitting a job to a compute node hosting a GPU is: 
 
-$qsub -l nodes=1:gpu:ppn=2 run.sh 
+$ qsub -l nodes=1:gpu:ppn=2 run.sh 
 
 step3a) Run code on genration9 processor 
-$qsub -l nodes=1:gen9:ppn=2 run.sh
+$ qsub -l nodes=1:gen9:ppn=2 run.sh
 
 step4) Run code on xeon processor 
-$qsub -l nodes=1:xeon:ppn=2 run.sh
+$ qsub -l nodes=1:xeon:ppn=2 run.sh
 
 step5) run code on fpga emulator
-$qsub -l nodes=1:fpga_compile:ppn=2 -d . run.sh
+$ qsub -l nodes=1:fpga_compile:ppn=2 -d . run.sh
  
 step6) run code on fpga hardware Arria
 $qsub -l nodes=1:fpga_runtime:arria10:ppn=2 -d . run.sh
