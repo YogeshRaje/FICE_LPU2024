@@ -42,7 +42,8 @@ python demo_python1.py
 
 -save run.sh and return to terminal  ( CTRL+X --> Y --> Press ENTER Key)
 
-- # python demo_python1.py
+-Run the demo_python1.py file on terminal and check the execution time
+$ python demo_python1.py
 step3)run code on GPU- How to target specific GPUs
 The command for submitting a job to a compute node hosting a GPU is: 
 
@@ -58,13 +59,19 @@ step5) run code on fpga emulator
 $ qsub -l nodes=1:fpga_compile:ppn=2 -d . run.sh
  
 step6) run code on fpga hardware Arria
-$qsub -l nodes=1:fpga_runtime:arria10:ppn=2 -d . run.sh
+$ qsub -l nodes=1:fpga_runtime:arria10:ppn=2 -d . run.sh
 
 step7) run code on fpga hardware Stratix
-$qsub -l nodes=1:fpga_runtime:stratix10:ppn=2 -d . run.sh
+$ qsub -l nodes=1:fpga_runtime:stratix10:ppn=2 -d . run.sh
 
 
 It will create two files- run.sh.e2081402  and run.sh.o2081402
  
--To check output run command on terminal 
+-To check output run command on terminal
 >cat run.sh.o2081402
+
+or 
+- Double click on run.sh.o2081402 file.
+
+*** To clear the terminal 
+$ clear 
