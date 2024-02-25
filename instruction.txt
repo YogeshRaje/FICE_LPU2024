@@ -22,7 +22,7 @@ step5) change directory to lpu
 (IDP ) on Intel Devcloud 
 
 step1) open terminal and run command 
-# git clone https://github.com/YogeshRaje/FICE_LPU2024
+# git clone https://github.com/YogeshRaje/FICE_LPU2024.git
 
 # cd FICE_LPU2024
 
