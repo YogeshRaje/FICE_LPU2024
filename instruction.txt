@@ -35,7 +35,7 @@ add following line of code
 cd $PBS_O_WORKDIR
 python demo_python1.py
 
--save run.sh and return to terminal 
+-save run.sh and return to terminal  ( CTRL+X --> Y --> Press ENTER Key)
 
 
 step3)run code on GPU- How to target specific GPUs
