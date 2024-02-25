@@ -24,7 +24,7 @@ step5) change directory to lpu
 step1) open terminal and run command 
 # git clone https://github.com/YogeshRaje/FICE_LPU2024
 
-# cd INTEL_FICE_LPU
+# cd FICE_LPU2024
 
 step2) Create run.sh file 
 $nano run.sh 
